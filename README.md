@@ -8,7 +8,7 @@ They can change numbers in the code and immediately see what happens.
 Shows the live camera image.
 Press Q to quit.
 
-
+✂️⛏️
 Flip the image
 ```bash
 frame = cv2.flip(frame, 1)
@@ -23,6 +23,7 @@ cv2.resizeWindow("Press Q/q to close", 320, 240)
 Shows the camera image as edges (like a sketch).
 Press Q to quit.
 
+✂️⛏️
 Change the window name
 ```bash
 cv2.namedWindow("My New Camera", cv2.WINDOW_NORMAL)
@@ -58,8 +59,7 @@ pip install opencv-python
 カメラの画像をそのまま表示します。
 Qキーで終了。
 
-子どもが遊べるポイント
-- ウィンドウの名前を変える
+### ✂️子どもが遊べるポイント ⛏️
 - 左右反転してみる
 - ウィンドウの大きさを変える
 
@@ -67,10 +67,12 @@ Qキーで終了。
 カメラ画像を 線だけの絵（エッジ） にして表示します。
 Qキーで終了。
 
+### ✂️子どもが遊べるポイント ⛏️
+- ウィンドウの名前を変える
 - ぼかしの強さを変える
 - 線の強さを変える
 
-### 必要なもの
+## 必要なもの
 - Python
 - OpenCV
 ```bash
