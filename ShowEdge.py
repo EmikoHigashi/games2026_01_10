@@ -6,16 +6,16 @@ import cv2
 def main():
     cap = cv2.VideoCapture(0)  # 0 はデフォルトカメラ
     if not cap.isOpened():
-        print("カメラを開けませんでした。")
+        print("Could not open camera.")
         return
 
-    cv2.namedWindow("Press Q/q to close", cv2.WINDOW_NORMAL)
+    cv2.namedWindow("My Edge Camera", cv2.WINDOW_NORMAL)
 
     try:
         while True:
             ret, frame = cap.read()
             if not ret:
-                print("フレーム取得に失敗しました。")
+                print("Failed to retrieve frame.")
                 break
 
             gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -24,9 +24,9 @@ def main():
 
             # エッジをカラー表示
             edges_bgr = cv2.cvtColor(edges, cv2.COLOR_GRAY2BGR)
-            cv2.imshow("Press Q/q to close", edges_bgr)
+            cv2.imshow("My Edge Camera", edges_bgr)
             h, w = edges_bgr.shape[:2]
-            cv2.resizeWindow("Press Q/q to close", w, h)
+            cv2.resizeWindow("My Edge Camera", w, h)
 
             key = cv2.waitKey(1) & 0xFF
             if key == ord('q') or key == ord('Q'):
