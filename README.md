@@ -23,6 +23,9 @@ cv2.resizeWindow("Press Q/q to close", 320, 240)
 Shows the camera image as edges (like a sketch).
 Press Q to quit.
 
+Change Window name
+cv2.namedWindow("My New Camera", cv2.WINDOW_NORMAL)
+
 Change the blur size
 ```bash
 blurred = cv2.GaussianBlur(gray, (3, 3), 1.0)
