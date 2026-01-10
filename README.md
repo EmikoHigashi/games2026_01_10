@@ -37,10 +37,10 @@ edges = cv2.Canny(blurred, 30, 120)
 Click the **“Code”** button and select **“Download ZIP”** to download all files as a ZIP archive.
 
 ### Requirements
-Python
-OpenCV 
+- Python
+- OpenCV 
 ```bash
-pip install opencv-python)
+pip install opencv-python
 ```
 
 
@@ -66,8 +66,11 @@ Qキーで終了。
 - 線の強さを変える
 
 ### 必要なもの
-Python
-OpenCV
+- Python
+- OpenCV
+```bash
+pip install opencv-python
+```
 
 
 
