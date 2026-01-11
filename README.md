@@ -8,7 +8,7 @@ They can change numbers in the code and immediately see what happens.
 Shows the live camera image.
 Press Q to quit.
 
-✂️what they can change⛏️
+✂️what kids can change⛏️
 Flip the image
 ```bash
 frame = cv2.flip(frame, 1)
@@ -23,7 +23,7 @@ cv2.resizeWindow("Press Q/q to close", 320, 240)
 Shows the camera image as edges (like a sketch).
 Press Q to quit.
 
-✂️what they can change⛏️
+✂️what kids can change⛏️
 Change the window name
 ```bash
 cv2.namedWindow("My New Camera", cv2.WINDOW_NORMAL)
